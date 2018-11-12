@@ -15,9 +15,9 @@ export default () => (
                     enthusiast ⚾
                 </h2>
                 <div className="buttons">
-                    <span>Check out my work.</span>
-                    <span>See how I think.</span>
-                    <span>Learn more about me.</span>
+                    <Link to="/portfolio">Check out my work.</Link>
+                    <Link to="/blog">See how I think.</Link>
+                    <Link to="/portfolio">Learn more about me.</Link>
                 </div>
             </div>
         </div>

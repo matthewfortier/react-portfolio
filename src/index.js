@@ -69,7 +69,7 @@ class App extends React.Component {
                 e.target.tagName == 'SPAN'
             ) {
                 this.setState({
-                    size: 20
+                    size: 25
                 });
             } else {
                 this.setState({
@@ -93,7 +93,7 @@ class App extends React.Component {
                 x: this.state.x + dx * 0.1,
                 y: this.state.y + dy * 0.1
             });
-        }, 13.337);
+        }, 10);
     }
 
     myHandler(e) {}
@@ -134,7 +134,7 @@ class App extends React.Component {
                             <AnimatedSwitch
                                 className="switchRule"
                                 {...pageTransitions}
-                                runOnMount={location.pathname === '/'}
+                                /* runOnMount={location.pathname === '#/'} */
                                 mapStyles={styles => ({
                                     transform: `translateX(${styles.offset}%)`
                                 })}
