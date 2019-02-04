@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Matthew Fotier Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+  </head>
+  <body>
+    <h1>MATTHEW FORTIER</h1>
+    <h3>Front-End Developer, aspiring designer, baseball enthusiast</h3>
+    <div class="links">
+      <button
+        class="btn"
+        onclick="openInNewTab('https://github.com/matthewfortier')"
+      >
+        <i class="icon ion-logo-github"></i> GitHub
+      </button>
+      <button
+        class="btn"
+        onclick="openInNewTab('https://codepen.io/matthewfortier/')"
+      >
+        <i class="icon ion-logo-codepen"></i> CodePen
+      </button>
+      <button class="btn" onclick="openInNewTab('MatthewFortierResume.pdf')">
+        <i class="icon ion-md-paper"></i> Resume
+      </button>
+      <button
+        class="btn"
+        onclick="openInNewTab('https://www.linkedin.com/in/matthewfortier/')"
+      >
+        <i class="icon ion-logo-linkedin"></i> LinkedIn
+      </button>
+    </div>
+    <script>
+      function openInNewTab(url) {
+        var win = window.open(url, "_blank");
+        win.focus();
+      }
+    </script>
+  </body>
+</html>

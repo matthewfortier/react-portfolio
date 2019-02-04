@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBold.otf") format("opentype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-size: 8vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", sans-serif;
+  text-shadow: 2px 2px 8px #ccc;
+}
+
+h3 {
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  color: #7e7e7e;
+  font-weight: 500;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.links {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin: 6px 6px;
+  color: #423f3f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+}
+
+.btn--blue {
+  color: #4285f4;
+  border-color: #4285f4;
+}
+
+.btn:hover {
+  color: white;
+  border-color: transparent;
+}
+
+.btn:hover:before {
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  background-color: #423f3f;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h3 {
+    font-size: 12px;
+  }
+  .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
